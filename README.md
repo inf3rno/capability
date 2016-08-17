@@ -7,3 +7,13 @@ The capability.js library provides capability detection for different javascript
 ## Documentation
 
 This project is empty yet.
+
+### Installation
+
+```bash
+npm install capability
+```
+
+```bash
+bower install capability
+```
