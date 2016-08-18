@@ -1,1 +1,1 @@
-require(".").checkFile(__filename);
+require(".").check("Object.defineProperty");

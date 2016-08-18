@@ -24,8 +24,7 @@ The lib requires only basic javascript features, so it will run in every js envi
 
 #### Requirements
 
-If you want to use the `require("capability/Error.captureStackTrace")` style capability check, then you'll need the `path` module, or a path shim, which implements `path.basename()` and a loader, which can set the `__filename` value properly.
-Browserify is such a loader, but I guess you can use WebPack, or anything else, so this part really depends on the loader requirements.
+If you want to use the lib in browser, you'll need a node module loader, e.g. browserify, webpack, etc...
 
 #### Usage
 
@@ -75,16 +74,9 @@ capability.check("Object.create");
 
 #### Checking capability with require and modules
 
-It is possible to check the environments with `require()` by adding a module, which calls the `check(name)` or the `checkFile(fileName)` function.
-
-By the capability definitions in this lib I added a module by each definition with the following code:
-
-```js
-require(".").checkFile(__filename);
-```
-
-So by requiring the module, it will check the capability based on the file's basename. E.g. by `./Error.captureStackTrace` it will `check` the `"Error.captureStackTrace"` capability.
-Ofc. you can use a different approach if you want, e.g. you can call multiple `check`s from a single `requirements.js` file, etc...
+It is possible to check the environments with `require()` by adding a module, which calls the `check(name)` function.
+By the capability definitions in this lib I added such modules by each definition, so you can do for example `require("capability/es5")`.
+Ofc. you can do fun stuff if you want, e.g. you can call multiple `check`s from a single `requirements.js` file in your lib, etc...
 
 ### Definitions
 
