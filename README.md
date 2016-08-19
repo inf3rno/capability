@@ -85,13 +85,13 @@ Currently the following definitions are supported by the lib:
  - `arguments.callee.caller`
  - es5
     - `Array.prototype.forEach`
-    - `Error.prototype.stack`
     - `Function.prototype.bind`
     - `Object.create`
     - `Object.defineProperties`
     - `Object.defineProperty`
     - `Object.prototype.hasOwnProperty`
  - `Error.captureStackTrace`
+ - `Error.prototype.stack`
  
 Most of them just check whether the implementation exists by the actual environment. Probably I'll add more in-depth tests later...
 
