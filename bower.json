@@ -1,6 +1,6 @@
 {
   "name": "capability",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "capability.js - javascript environment capability detection",
   "keywords": [
     "javascript",
@@ -27,7 +27,11 @@
     ".gitignore",
     ".npmignore",
     ".travis.yml",
-    "package.json"
+    "package.json",
+    "features/",
+    "karma.conf.js",
+    "yadda.js",
+    "README.md"
   ],
   "scripts": {
     "test": "mocha --reporter spec yadda.js"
