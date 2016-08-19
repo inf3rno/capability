@@ -84,7 +84,9 @@ Currently the following definitions are supported by the lib:
 
  - `arguments.callee.caller`
  - es5
+    - `Array.prototype.forEach`
     - `Error.prototype.stack`
+    - `Function.prototype.bind`
     - `Object.create`
     - `Object.defineProperties`
     - `Object.defineProperty`
