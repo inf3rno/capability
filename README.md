@@ -85,6 +85,7 @@ Currently the following definitions are supported by the lib:
  - `arguments.callee.caller`
  - es5
     - `Array.prototype.forEach`
+    - `Array.prototype.map`
     - `Function.prototype.bind`
     - `Object.create`
     - `Object.defineProperties`
@@ -93,8 +94,6 @@ Currently the following definitions are supported by the lib:
  - `Error.captureStackTrace`
  - `Error.prototype.stack`
  
-Most of them just check whether the implementation exists by the actual environment. Probably I'll add more in-depth tests later...
-
 ## License
 
 MIT - 2016 Jánszky László Lajos
