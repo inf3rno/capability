@@ -82,6 +82,7 @@ Ofc. you can do fun stuff if you want, e.g. you can call multiple `check`s from 
 
 Currently the following definitions are supported by the lib:
 
+ - strict mode
  - `arguments.callee.caller`
  - es5
     - `Array.prototype.forEach`
